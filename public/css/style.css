@@ -1,0 +1,280 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cafceb;
+    z-index: -1;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    color: white;
+}
+
+/* ---- LOGIN/REGISTER ---- */
+
+
+
+/* ---- INDEX ---- */
+
+nav a {
+    margin: 0;
+    overflow: hidden;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+nav li {
+    font-size: 1.5em;
+    position: relative;
+    display: inline-block;
+    top: 10%; 
+    left: 90%;
+}
+
+.logo {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    font-size: 4rem;
+    list-style-type: none;
+}
+
+.logo2 {
+    width: 20%;
+    height: 10%;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 4rem;
+    list-style-type: none;
+}
+
+.todo-app-title {
+    position: absolute;
+    bottom: 90%;
+    left: 6%;
+    font-size: 1.5rem;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.todo-app {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    width: 20%;
+    height: 35%;
+    border-radius: 3%;
+    background-color: #009fe3; 
+    border: 0.2rem solid rgba(255,255,255,.5);
+}
+
+.todo-container {
+    font-size: 25;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    width: 93%;
+    height: 93%;
+    z-index: 2;
+}
+
+.notes-app-title {
+    position: absolute;
+    bottom: 89%;
+    left: 5%;
+    font-size: 1.5rem;
+    z-index: 2;
+    font-weight: bold;
+}
+
+.notes-app {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 25%;
+    height: 30%;
+    border-radius: 3%;
+    background-color: #009fe3;
+    border: 0.2rem solid rgba(255,255,255,.5);
+}
+
+.notes-container {
+    position: absolute;
+    top: 6%;
+    left: 4%;
+    width: 93%;
+    height: 92%;
+    overflow: none;
+}
+
+.player-app-title {
+    position: absolute;
+    bottom: 52%;
+    left: 3%;
+    font-size: 1.5rem;
+    z-index: 2;
+    font-weight: bold;  
+}
+
+.player-app {
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    width: 35%;
+    height: 7%;
+    border-radius: 3%;
+    background-color: #009fe3; 
+    border: 0.2rem solid rgba(255,255,255,.5);
+}
+
+.player-container {
+    color: white;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    position: absolute;
+    width: 80%;
+    height: 70%;
+    top: 20%;
+    left: 3%;
+    z-index: 2;
+}
+
+.player-icons {
+    width: 40px;
+    height: 40px;
+    padding-right: 2%;
+}
+
+.player-icons-right {
+  position: relative;
+  left: 25%;
+  width: 40px;
+  height: 40px;
+  padding-right: 2%;
+}
+
+
+.player-app-controls {
+  text-align: center;
+  position: relative;
+  top: 15%;
+  height: 80%;
+  width: 15%;
+  left: 85%;
+}
+
+.player-control-buttons {
+  width: 25px;
+  height: 25px;
+}
+
+#player-volume-slider {
+  width: 80%;
+}
+
+.pomodoro-app-title {
+    position: absolute;
+    bottom: 82%;
+    left: 5%;
+    font-size: 1.5rem;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.pomodoro-app {
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    width: 20%;
+    height: 20%;
+    border-radius: 3%;
+    background-color: #009fe3; 
+    border: 0.2rem solid rgba(255,255,255,.5);
+}
+
+/* POMODORO-APP STYLING */
+
+button, button:focus {
+  border: 0;
+  outline: none;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+
+.btns > button {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-weight: 500;
+  height: 1.5rem;
+  width: 4rem;
+}
+
+.green {
+  color: #6a896a;
+  background-color: darkseagreen;
+}
+
+.red {
+  color: #c1686a;
+  background-color: lightcoral;
+}
+
+.blue {
+  color: #71aacb;
+  background-color: lightskyblue;
+}
+
+.green:hover { background-color: #a1d1a1; }
+.red:hover { background-color: #f19fa0; }
+.blue:hover { background-color: #aadbf7; }
+
+#timer {
+  font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+  color: white;
+  font-size: 4rem;
+  font-weight: 1000;
+  width: 65%;
+  text-align: center;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.timer-container > button {
+  background-color: transparent;
+  color: #e7c300;
+}
+
+.timer-container > button:hover {
+  color: #ccac00;
+}
+
+.timer-container > button:disabled {
+  color: #ccac00;
+}
+
+#session-minus {
+  margin-right: 1rem;
+}
+
+#session-plus {
+  margin-left: 1rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 3%;
+    left: 44%;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: black;
+}
